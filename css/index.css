@@ -278,18 +278,21 @@ footer {
   font-size: 2rem;
   text-align: center;
   padding: 10px;
-  max-width: 100px;
-  max-height: 35px;
   border-radius: 5px;
   border-color: white;
 }
 .home .walk .walk-text .btn:hover {
   color: red;
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     max-width: 100%;
-    margin-bottom: 20px;
+    padding: 30px;
+    margin-bottom: 10px;
   }
 }
 .home .walk .walk-img {

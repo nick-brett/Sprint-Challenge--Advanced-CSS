@@ -69,13 +69,17 @@
 			.btn {
 				.button-creator(white, @btn-bg-color);
 
-				.roundborder(5px, white);
+        .roundborder(5px, white);
+        a {
+          text-decoration: none;
+          color: white;
+        }
 
 				@media @mobile {
-					max-width: 100%;
-					margin-bottom: 20px;
+          max-width: 100%;
+          padding: 30px;
+          margin-bottom: 10px;
 				}
-				//^^^^^ Why isn't this working ^^^^^\\
 			}
 		}
 
