@@ -1,1 +1,40 @@
 // Navigation code here
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    height: 95px;
+    background-color: @nav-bg;
+    font-style: @nav-font;
+    border: @nav-border;
+
+    .center();
+    @media @mobile{
+        max-width: 800px;
+    }
+    h1{
+        font-size: 4rem;
+        padding-top: 15px;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 200px;
+        width: 500px;
+        a {
+            font-size: 1.5rem;
+            color: black;
+            &:link{
+                text-decoration: none;
+            }
+            &:hover{
+                color: grey;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
