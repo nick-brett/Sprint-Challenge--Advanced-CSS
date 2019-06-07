@@ -18,16 +18,22 @@
 	background-color: @bg-color;
 	font-size: 2rem;
 	text-align: center;
-	padding: 10px;
-
+    padding: 10px;
+    max-width: 95px;
+    a{
+        color:@font-color;
+    }
 	&:hover {
-		color: red;
+        color: @bg-color;
+        a{
+            color:@bg-color;
+        }
+        background-color: @font-color;
 	}
 	// @media @mobile{
 	//     max-height:
 	// }
 }
-
 .roundborder(@border-edge, @border-color) {
 	border-radius: @border-edge;
 	border-color: @border-color;
