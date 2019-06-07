@@ -1,1 +1,40 @@
 // Mixins Here
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.centerimg() {
+	width: 100%;
+	margin: auto;
+}
+
+//parametric mixins
+
+.button-creator(@font-color, @bg-color) {
+	color: @font-color;
+	background-color: @bg-color;
+	font-size: 2rem;
+	text-align: center;
+    padding: 10px;
+    max-width: 95px;
+    a{
+        color:@font-color;
+    }
+	&:hover {
+        color: @bg-color;
+        a{
+            color:@bg-color;
+        }
+        background-color: @font-color;
+	}
+	// @media @mobile{
+	//     max-height:
+	// }
+}
+.roundborder(@border-edge, @border-color) {
+	border-radius: @border-edge;
+	border-color: @border-color;
+}
